@@ -15,7 +15,7 @@ const LoginForm = ({ onSwitchToRegister }) => {
 
     try {
       console.log("Sending login with:", { email, password });
-      const response = await fetch('http://localhost:8800/auth/login', {
+      const response = await fetch('https://digital-blink-loan.onrender.com/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

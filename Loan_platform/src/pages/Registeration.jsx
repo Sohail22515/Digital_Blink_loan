@@ -93,7 +93,7 @@ const RegisterForm = ({ onSwitchToLogin }) => {
 
     try {
       setIsSubmitting(true);
-      const response = await fetch('http://localhost:8800/auth/register', {
+      const response = await fetch('https://digital-blink-loan.onrender.com/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
