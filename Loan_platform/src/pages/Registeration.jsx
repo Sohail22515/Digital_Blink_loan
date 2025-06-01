@@ -131,7 +131,7 @@ const RegisterForm = ({ onSwitchToLogin }) => {
       }, 3000);
 
     } catch (error) {
-      console.error('Registration error:', error);
+      // console.error('Registration error:', error);
       setSubmitError(error.message || 'An error occurred during registration');
     } finally {
       setIsSubmitting(false);

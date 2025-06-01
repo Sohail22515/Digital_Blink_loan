@@ -14,7 +14,7 @@ const LoginForm = ({ onSwitchToRegister }) => {
     e.preventDefault();
 
     try {
-      console.log("Sending login with:", { email, password });
+      // console.log("Sending login with:", { email, password });
       const response = await fetch('https://digital-blink-loan.onrender.com/auth/login', {
       method: 'POST',
       headers: {
@@ -25,18 +25,17 @@ const LoginForm = ({ onSwitchToRegister }) => {
 
       if (response.ok) {
         const data = await response.json();
-        console.log("Login success", data);
+        // console.log("Login success", data);
         navigate("/home")
         // Optionally redirect user or store token
       } else {
         const error = await response.json();
-        console.error("Login failed:", error.message);
+        // console.error("Login failed:", error.message);
         alert("Login failed: " + error.message);
       }
       
     } catch (error) {
-      console.error('Error during login:', error);
-
+      // console.error('Error during login:', error);
     }
   };
 
