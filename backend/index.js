@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser())
 app.use(cors({
-  origin: 'http://localhost:5173', // your frontend URL
+  origin: ['http://localhost:5173','https://digital-blink-loan-1.onrender.com' ],  // your frontend URL
   credentials: true,
 }));
 
