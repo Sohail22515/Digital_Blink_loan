@@ -46,7 +46,8 @@ const connect=async () => {
   }
 }
 
-app.listen(8800, () => {
+const PORT = process.env.PORT || 8800;
+app.listen(PORT, () => {
   connect();
-  console.log('Server is running on port 8800');
-})
+  console.log(`Server is running on port ${PORT}`);
+});
