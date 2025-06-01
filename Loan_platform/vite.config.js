@@ -7,5 +7,6 @@ export default defineConfig({
   server:{
     host:'0.0.0.0',
     port:parseInt(process.env.PORT) || 5173,
+    allowedHosts: ['digital-blink-loan-1.onrender.com']
   }
 })
